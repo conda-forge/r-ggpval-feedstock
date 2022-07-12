@@ -1,4 +1,4 @@
-{% set version = '0.2.4' %}
+{% set version = "0.2.5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggpval_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggpval/ggpval_{{ version }}.tar.gz
-  sha256: ea4f85b22553d1ac3972f129dd595a2d6cf8522634e5145fb6fc221fd399237e
+  sha256: fe2d80c8d43ca5e7ffb26ee98043fd36f3b4306266a91678ecc504a8eb749227
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -41,13 +41,8 @@ test:
 about:
   home: https://github.com/s6juncheng/ggpval
   license: GPL-3.0-only
-  summary: Automatically performs desired statistical tests (e.g. wilcox.test(), t.test()) to
-    compare between groups, and adds the resulting p-values to the plot with an annotation
-    bar. Visualizing group differences are frequently performed by boxplots, bar plots,
-    etc. Statistical test results are often needed to be annotated on these plots. This
-    package provides a convenient function that works on 'ggplot2' objects, performs
-    the desired statistical test between groups of interest and annotates the test results
-    on the plot.
+  summary: Automatically performs desired statistical tests (e.g. wilcox.test(), t.test()) to compare between groups, and adds the resulting p-values to the plot with an annotation bar. Visualizing group differences are frequently performed by boxplots, bar plots, etc. Statistical test results are often needed to be annotated
+    on these plots. This package provides a convenient function that works on 'ggplot2' objects, performs the desired statistical test between groups of interest and annotates the test results on the plot.
   license_family: GPL3
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
