@@ -1,11 +1,11 @@
-About r-ggpval
-==============
+About r-ggpval-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ggpval-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/s6juncheng/ggpval
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ggpval-feedstock/blob/main/LICENSE.txt)
 
 Summary: Automatically performs desired statistical tests (e.g. wilcox.test(), t.test()) to compare between groups, and adds the resulting p-values to the plot with an annotation bar. Visualizing group differences are frequently performed by boxplots, bar plots, etc. Statistical test results are often needed to be annotated on these plots. This package provides a convenient function that works on 'ggplot2' objects, performs the desired statistical test between groups of interest and annotates the test results on the plot.
 
